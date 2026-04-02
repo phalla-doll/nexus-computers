@@ -40,7 +40,7 @@ export default function Home() {
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-5 border-b border-gray-200 sticky top-0 bg-white/80 backdrop-blur-md z-50">
         <div className="text-xl font-space font-bold tracking-[0.2em]">NEXUS</div>
-        <div className="text-[10px] tracking-[0.2em] text-gray-400 font-medium hidden sm:block">TYPE TO SEARCH</div>
+        <div className="text-xs tracking-[0.2em] text-gray-500 font-medium hidden sm:block">TYPE TO SEARCH</div>
         <div>
           <MoreHorizontal className="w-6 h-6" />
         </div>
@@ -59,20 +59,20 @@ export default function Home() {
           
           {/* Filters Row */}
           <div className="bg-white p-5 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors group">
-            <span className="text-[10px] font-bold tracking-[0.2em]">CATEGORY</span>
-            <ChevronDown className="w-4 h-4 text-gray-400 group-hover:text-black transition-colors" />
+            <span className="text-xs font-bold text-gray-900 tracking-[0.2em]">CATEGORY</span>
+            <ChevronDown className="w-4 h-4 text-gray-500 group-hover:text-black transition-colors" />
           </div>
           <div className="bg-white p-5 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors group">
-            <span className="text-[10px] font-bold tracking-[0.2em]">BRAND</span>
-            <ChevronDown className="w-4 h-4 text-gray-400 group-hover:text-black transition-colors" />
+            <span className="text-xs font-bold text-gray-900 tracking-[0.2em]">BRAND</span>
+            <ChevronDown className="w-4 h-4 text-gray-500 group-hover:text-black transition-colors" />
           </div>
           <div className="bg-white p-5 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors group">
-            <span className="text-[10px] font-bold tracking-[0.2em]">PROCESSOR</span>
-            <ChevronDown className="w-4 h-4 text-gray-400 group-hover:text-black transition-colors" />
+            <span className="text-xs font-bold text-gray-900 tracking-[0.2em]">PROCESSOR</span>
+            <ChevronDown className="w-4 h-4 text-gray-500 group-hover:text-black transition-colors" />
           </div>
           <div className="bg-white p-5 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors group">
-            <span className="text-[10px] font-bold tracking-[0.2em]">PRICE</span>
-            <ChevronDown className="w-4 h-4 text-gray-400 group-hover:text-black transition-colors" />
+            <span className="text-xs font-bold text-gray-900 tracking-[0.2em]">PRICE</span>
+            <ChevronDown className="w-4 h-4 text-gray-500 group-hover:text-black transition-colors" />
           </div>
 
           {/* Products */}
@@ -90,11 +90,11 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex justify-between items-end mt-6">
-                <div className="flex flex-col gap-1">
-                  <span className="text-[10px] text-gray-400 tracking-[0.15em] uppercase">{product.name}</span>
-                  <span className="text-[10px] text-gray-400 tracking-[0.15em] uppercase">{product.desc}</span>
+                <div className="flex flex-col gap-1.5">
+                  <span className="text-xs font-bold text-gray-900 tracking-[0.15em] uppercase">{product.name}</span>
+                  <span className="text-xs font-medium text-gray-600 tracking-[0.15em] uppercase">{product.desc}</span>
                 </div>
-                <span className="text-[10px] font-bold tracking-[0.1em]">{product.price}</span>
+                <span className="text-sm font-bold text-gray-900 tracking-[0.1em]">{product.price}</span>
               </div>
             </div>
           ))}
